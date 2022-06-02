@@ -3,15 +3,14 @@
 /**
  * main - Print "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
  *
- * Return: Always 0 (Success)
+ * Return: 1
  */
 int main(void)
 {
-	long int quote[] = 'and that piece of art is useful\" \
-	- Dora Korpar, 2015-10-19';
+	char quote[] = ":and that piece of art is useful\" \
+	- Dora Korpar, 2015-10-19";
 
-	putchar(quote);
-	putchar('\n');
+	write(2, quote, sizeof(quote));
 
-	return (0);
+	return (1);
 }
