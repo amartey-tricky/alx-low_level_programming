@@ -3,3 +3,5 @@ c
 main.s
 main.o
 cisfun
+a.out
+*.exe
