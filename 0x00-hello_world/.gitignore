@@ -5,3 +5,4 @@ main.o
 cisfun
 a.out
 *.exe
+.vscode
