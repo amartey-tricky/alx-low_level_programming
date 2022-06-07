@@ -9,11 +9,11 @@ void times_table(void)
 {
 	int product, row, column;
 
-	for (column = 0;column < 10;column++)
+	for (column = 0; column < 10; column++)
 	{
 		for (row = 0; row < 10; row++)
 		{
-			product =column * row;
+			product = column * row;
 			if (product < 10)
 			{
 				_putchar(' ');
