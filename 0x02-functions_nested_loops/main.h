@@ -5,14 +5,18 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <ctype.h>
 
 /* Add _putchar function */
 int _putchar(char c);
 
-/* Function to print alpahbets in lowercase */
+/* Function to print alphabets in lowercase */
 void print_alphabet(void);
 
 /* Function to print alphabets in lowercase 10 times */
 void print_alphabet_x10(void);
+
+/* Function to check if a character is lowercase */
+int _islower(int c);
 
 #endif
