@@ -31,4 +31,7 @@ int _abs(int);
 /* Function that prints the last digit of a number */
 int print_last_digit(int);
 
+/* Function that prints every minute of the day */
+void jack_bauer(void);
+
 #endif
