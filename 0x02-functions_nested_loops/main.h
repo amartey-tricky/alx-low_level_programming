@@ -34,4 +34,7 @@ int print_last_digit(int);
 /* Function that prints every minute of the day */
 void jack_bauer(void);
 
+/* Function that prints the nine times tables */
+void times_table(void);
+
 #endif
