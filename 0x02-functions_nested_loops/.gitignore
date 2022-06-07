@@ -1,4 +1,5 @@
 checker/*
 exe/*
+main/*
 _putchar.c
 .vscode

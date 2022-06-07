@@ -2,6 +2,8 @@
 
 /**
  * print_alphabet - function to print the alphabets in lowercase
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {
