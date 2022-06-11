@@ -31,4 +31,7 @@ void more_numbers(void);
 /* Functions that draws a straight line in terminal */
 void print_line(int n);
 
+/* Function that draws a diagonal line in terminal */
+void print_diagonal(int n);
+
 #endif
