@@ -22,4 +22,7 @@ int mul(int a, int b);
 /* Function that prints two numbers from 0-9 */
 void print_numbers(void);
 
+/* Function that prints numbers from 0-9 excluding 2 and 4 */
+void print_most_numbers(void);
+
 #endif
