@@ -13,4 +13,7 @@ int _isupper(int c);
 /* Function that checks for a digit */
 int _isdigit(int c);
 
+/* Function that multiplies two integers */
+int mul(int a, int b);
+
 #endif
