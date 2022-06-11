@@ -28,4 +28,7 @@ void print_most_numbers(void);
 /* Function that prints 0-14 10 times */
 void more_numbers(void);
 
+/* Functions that draws a straight line in terminal */
+void print_line(int n);
+
 #endif
