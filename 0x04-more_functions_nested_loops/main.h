@@ -34,4 +34,7 @@ void print_line(int n);
 /* Function that draws a diagonal line in terminal */
 void print_diagonal(int n);
 
+/* Function to print a square */
+void print_square(int size);
+
 #endif
