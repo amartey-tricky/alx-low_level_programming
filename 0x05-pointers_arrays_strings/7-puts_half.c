@@ -3,20 +3,27 @@
 int _strlen(char *s);
 
 /**
- * print_rev - prints a string in reverse
- * @s: string to print in reverse
+ * puts_half - prints half of a string
+ * @str: string to be printed
  *
  * Return: void
  */
-void print_rev(char *s)
+void puts_half(char *str)
 {
-	int i;
+	int i, len;
 
-	i = _strlen(s) - 1;
-	while (i >= 0)
+	len = _strlen(str);
+
+	if (len % 2 == 0)
 	{
-		_putchar(s[i]);
-		i--;
+		for (i = len / 2; i < len; i++)
+			_putchar(str[i]);
+	}
+
+	else
+	{
+		for (i = len / 2 + 1; i < len; i++)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }

@@ -3,22 +3,26 @@
 int _strlen(char *s);
 
 /**
- * print_rev - prints a string in reverse
- * @s: string to print in reverse
+ * rev_string - reverses a string
+ * @s: string to be reversed
  *
  * Return: void
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i;
+	int i, j;
+	char temp;
 
-	i = _strlen(s) - 1;
-	while (i >= 0)
+	i = 0;
+	j = _strlen(s) - 1;
+	while (i < j)
 	{
-		_putchar(s[i]);
-		i--;
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
+		i++;
+		j--;
 	}
-	_putchar('\n');
 }
 
 /**
