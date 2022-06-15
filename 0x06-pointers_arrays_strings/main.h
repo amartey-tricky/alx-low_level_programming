@@ -10,4 +10,7 @@
 /* _putchar function */
 int _putchar(char c);
 
+/* function that concatenates two strings */
+char *_strcat(char *dest, char *src);
+
 #endif
