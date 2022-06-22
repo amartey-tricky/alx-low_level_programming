@@ -16,4 +16,7 @@ void _puts_recursion(char *s);
 /* function that prints a tring in reverse followed by anew line */
 void _print_rev_recursion(char *s);
 
+/* function that returns the length of a string */
+int _strlen_recursion(char *s);
+
 #endif
