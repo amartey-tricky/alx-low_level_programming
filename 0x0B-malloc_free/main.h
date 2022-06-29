@@ -22,4 +22,7 @@ char *str_concat(char *s1, char *s2);
 /* function that prints a pointer to a two dimensional array */
 int **alloc_grid(int width, int height);
 
+/* function that frees a two dimensional array */
+void free_grid(int **grid, int height);
+
 #endif
