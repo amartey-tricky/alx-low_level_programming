@@ -19,4 +19,7 @@ char *_strdup(char *str);
 /* function that concatenates two strings */
 char *str_concat(char *s1, char *s2);
 
+/* function that prints a pointer to a two dimensional array */
+int **alloc_grid(int width, int height);
+
 #endif
