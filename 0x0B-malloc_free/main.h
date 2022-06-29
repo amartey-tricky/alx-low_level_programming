@@ -25,4 +25,7 @@ int **alloc_grid(int width, int height);
 /* function that frees a two dimensional array */
 void free_grid(int **grid, int height);
 
+/* function that concatenates all arguments passed to the program */
+char *argstostr(int ac, char **av);
+
 #endif
