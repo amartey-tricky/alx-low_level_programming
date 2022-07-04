@@ -12,7 +12,8 @@
  *
  * Description: struct for dog
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
@@ -27,7 +28,8 @@ struct dog {
  * Description: create a new dog
  * Return: pointer to the new dog
  */
-typedef struct dog_t{
+typedef struct dog_t
+{
 	char *name;
 	float age;
 	char *owner;
