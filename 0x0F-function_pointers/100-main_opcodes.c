@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point
+ * @argc: Number of arguments
+ * @argv: Array of arguments
+ *
+ * Return: 0 on success, 1 on error
+ */
 int main(int argc, char **argv[])
 {
-	int i, n;
-	int (*p)(int, char **);
+	int bytes, index;
+	char (*buffer)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
@@ -12,20 +20,26 @@ int main(int argc, char **argv[])
 		exit(1);
 	}
 
-	n = atoi(argv[1]);
-
-	if (n < 0)
+	bytes = atoi(argv[1]);
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	p = &main;
-
-	for (i = 0; i < n; i++)
+	for (index = 0; index < bytes; index++)
 	{
-		printf("%.2x ", *((unsigned char *)(p + i)));
+		opcode = (unsigned char *)buffer;
+		printf("%.2x\n", opcode);
+
+		if (index == bytes - 1)
+			continue;
+
+		printf(" ");
+
+		buffer++;
 	}
+
 	printf("\n");
 
 	return (0);
