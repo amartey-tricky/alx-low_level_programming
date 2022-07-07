@@ -9,8 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	char *op;
-	int a, b, res;
+	int a, b;
+	int (*f)(int, int);
+	char op;
 
 	if (argc != 4)
 	{
@@ -18,18 +19,19 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	op = get_op_func(argv[2]);
+	op = *(argv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	if (op == NULL)
+	f = get_op_func(&op);
+
+	if (f == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		return (98);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	printf("%d\n", get_op_func(op)(a, b));
+	printf("%d\n", f(a, b));
 
 	return (0);
 }
