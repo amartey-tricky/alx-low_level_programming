@@ -3,15 +3,15 @@
 ; followed by a newline using the printf function
 ;-------------------------------------------------------------------
 
-extern printf
+extern _printf
 
-global _start
+global _main
 
 section .text
-_start :
-	push message_str
-	call printf
-	ret
+_main:
+        push msg
+        call _printf
+        ret
 
 section .data
-message_str : db "Hello, Holberton", 10, 0
+msg:   db "Hello, Holberton\n", 10, 0
