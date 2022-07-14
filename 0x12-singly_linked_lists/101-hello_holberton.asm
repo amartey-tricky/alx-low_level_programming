@@ -3,15 +3,14 @@
 ; followed by a newline using the printf function
 ;-------------------------------------------------------------------
 
-extern _printf
+global  _main
+        extern _printf
 
-global _main
-
-section .text
 _main:
-        push msg
-        call _printf
+        mov    edi, format
+        xor    eax, eax
+        call   _printf
+        mov    eax, 0
         ret
 
-section .data
-msg:   db "Hello, Holberton\n", 10, 0
+format: db "Hello, Holberton\n", 0x
